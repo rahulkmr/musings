@@ -15,6 +15,7 @@ def room?(num)
       # However, iterating over hash keys and modifying hash works.
       subsets[s + d] = true
     end
+    subsets[d] = true
   end
   divisor_sum > num
 end
