@@ -1,0 +1,30 @@
+INFO:root:Logging mode enabled, will not send email to anyone, just log.
+INFO:root:SMTPReceiver started on 127.0.0.1:8825.
+DEBUG:root:Message received from Peer: ('127.0.0.1', 59559), From: 'somedude@localhost', to To ['tester@localhost'].
+DEBUG:routing:Matched 'tester@localhost' against START.
+DEBUG:root:MESSAGE to tester@localhost:
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+From: somedude@localhost
+Subject: requests_tests
+To: tester@localhost
+Content-Transfer-Encoding: 7bit
+
+Test that forward works.
+DEBUG:routing:Message to set(['tester@localhost']) was handled by lamson.handlers.log.START
+DEBUG:routing:Matched 'tester@localhost' against START.
+DEBUG:routing:Message to set(['tester@localhost']) was handled by lamson.handlers.queue.START
+DEBUG:root:Message received from Peer: ('127.0.0.1', 59561), From: 'somedude@localhost', to To ['tester@badplace.notinterwebs'].
+DEBUG:routing:Matched 'tester@badplace.notinterwebs' against START.
+DEBUG:root:MESSAGE to tester@badplace.notinterwebs:
+Content-Type: text/plain; charset="us-ascii"
+MIME-Version: 1.0
+From: somedude@localhost
+Subject: requests_tests
+To: tester@badplace.notinterwebs
+Content-Transfer-Encoding: 7bit
+
+Relay should not happen
+DEBUG:routing:Message to set(['tester@badplace.notinterwebs']) was handled by lamson.handlers.log.START
+DEBUG:routing:Matched 'tester@badplace.notinterwebs' against START.
+DEBUG:routing:Message to set(['tester@badplace.notinterwebs']) was handled by lamson.handlers.queue.START
