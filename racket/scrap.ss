@@ -16,3 +16,9 @@
     (k 0)
     (list-sum (cdr l) 
               (lambda (s) (k (+ s (car l)))))))
+
+(define (counter start)
+  (set! start (- start 1))
+  (lambda ()
+    (set! start (+ start 1))
+    start))
