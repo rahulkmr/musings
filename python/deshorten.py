@@ -1,5 +1,5 @@
 import sys
 from urllib2 import Request, urlopen
-req = Request(sys.argv[1])
-req.get_method = lambda: 'HEAD'
-print urlopen(req).url
+request = Request(sys.argv[1])
+request.get_method = lambda: 'HEAD'
+print urlopen(request).url

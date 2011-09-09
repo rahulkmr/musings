@@ -38,7 +38,7 @@ let iter f binTree =
         | Done -> ()
         | Step(x, getNext) ->
             f x
-            processSteps (getNext())
+            processSteps <| getNext()
 
     processSteps steps
         

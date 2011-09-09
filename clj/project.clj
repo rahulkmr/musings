@@ -1,6 +1,7 @@
 (defproject clojure_code "1.0.0-SNAPSHOT"
             :description "FIXME: write"
             :dependencies [[org.clojure/clojure "1.2.0"]
+                           [vimclojure/server "2.3.0-SNAPSHOT"]
                            [clj-time "0.3.0"]
                            [enlive "1.0.0-SNAPSHOT"]
                            [ring "0.3.8"]

@@ -1,4 +1,4 @@
-#include <cstdio>
+#include <stdio.h>
 
 int counter(const int _from, const int _to) {
     static int from = _from;
