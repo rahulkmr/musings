@@ -5,6 +5,7 @@ require 'test/unit'
 def match(str, start, finish, trans)
   state = [start]
   str.each_char do |c|
+    # Obtain next states.
     state = state.map {|s| trans[s][c] if trans[s] and trans[s][c] }.flatten
     break if state.nil?
   end or return false
