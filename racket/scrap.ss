@@ -22,3 +22,12 @@
   (lambda ()
     (set! start (+ start 1))
     start))
+
+(cond
+  [(equal? "hello" "hi") "how?"]
+  [else "yeah"])
+
+(define f
+  (lambda (x)
+    (let ([y 5])
+      (+ x y))))
