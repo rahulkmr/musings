@@ -1,9 +1,10 @@
 #lang racket
 
+(define fish-interface (interface () get-size grow eat))
 (define fish%
-  (class object%
+  (class* object% (fish-interface)
+         (init [size 10])
          (super-new)
-         (init size)
 
          (define current-size size)
 
