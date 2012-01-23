@@ -8,7 +8,7 @@
 
 (define (ask msg action)
   (page
-    `(form ((action ,action))
+    `(form [(action ,action)]
            ,msg
            (input [(name "number")])
            (input [(type "submit")]))))

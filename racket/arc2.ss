@@ -8,7 +8,7 @@
 
 (define (ask action msg)
   (page
-    `(form ((action ,action))
+    `(form ((action ,action) (method "post"))
            ,msg
            (input ((name "get")))
            (input ((type "submit"))))))
@@ -23,7 +23,7 @@
   (send/suspend (lambda (k-url)
                   (page `(a ((href ,k-url)) "Click here"))))
   (send/finish (page "Hi " name)))
-    
+
 (define (start req)
   (challenge req))
 
