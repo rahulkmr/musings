@@ -17,7 +17,7 @@
 (define (send-and-get msg)
   (define (get req field) (extract-binding/single field (request-bindings req)))
   (define ret-req (send/suspend/hidden
-                    (lambda (k-url form-field)
+                    (λ (k-url form-field)
                       (ask msg k-url form-field))))
   (string->number (get ret-req 'number)))
 

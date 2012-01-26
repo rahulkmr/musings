@@ -1,44 +1,32 @@
+require 'sinatra/reloader'
 require 'sinatra'
 
 $fnids = {}
 $counter = 0
 
-def new_fnid(fn)
-  $counter += 1
-  $fnids[$counter] = fn
-  $counter
+def store_fn(fn)
+  ($fnids[$counter += 1] = fn) and $counter
 end
 
 def dispatch_fn(fnid)
-  fn = $fnids[fnid.to_i]
-  if fn.nil?
-    'Unknown or expired link'
-  else
-    fn[]
-  end
+  fn = $fnids[fnid]
+  fn.nil? && 'Unknown or expired link' || fn[]
 end
 
-def w_link(&fn)
-  $fnids[$counter += 1] = fn
-  '<a href="?fnid=%s">Click here</a>' % $counter
+before do
+  halt dispatch_fn(params[:fnid].to_i) if params[:fnid]
 end
 
 get '/' do
-  if (fnid = params[:fnid])
-    dispatch_fn fnid
-  else
-    <<-EOF
-        <form method="post">
-            <input name="name" />
-            <input type="submit" />
-        </form>
-    EOF
-  end
+  <<-EOF
+    <form method="post">
+        <input name="name" />
+        <input type="submit" />
+    </form>
+  EOF
 end
 
 post '/' do
-  name = params[:name]
-  w_link do
-    "Hello #{name}"
-  end
+  show_name = -> { "Hello #{params[:name]}" }
+  '<a href="?fnid=%s">Click here</a>' % store_fn(show_name)
 end

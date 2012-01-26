@@ -1,5 +1,7 @@
 #lang racket
 
+(provide fact)
+
 (define (fact n)
   (define (fact-iter accum n)
     (if (= n 1)
