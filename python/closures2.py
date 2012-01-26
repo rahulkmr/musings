@@ -6,7 +6,7 @@ app.debug = True
 fnids = {}
 idx = 0
 
-def new_fnid(fn):
+def store_fnid(fn):
     global idx
     idx += 1
     fnids[idx] = fn
@@ -19,12 +19,18 @@ def dispatch_fn():
     else:
         return 'Unknown or expired link'
 
+@app.before_request
+def check_fnid():
+    if request.values.get('fnid'):
+        return dispatch_fn()
+
 @app.route('/', methods=['POST'])
 def w_link():
     name = request.values['name']
-    fnid = new_fnid(lambda: "Hello %s" % name)
+    fnid = store_fnid(lambda: "Hello %s" % name)
     return '<a href="?fnid=%s">Click here</a>' % (fnid)
 
+@app.route('/')
 def aform():
     return '''
         <form method="post">
@@ -32,12 +38,6 @@ def aform():
             <input type="submit" />
         </form>
     '''
-
-@app.route('/')
-def enter():
-    if request.values.get('fnid'):
-        return dispatch_fn()
-    return aform()
 
 if __name__ == '__main__':
     app.run()
