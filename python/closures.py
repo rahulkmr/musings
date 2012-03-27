@@ -6,6 +6,9 @@ fnids = {}
 idx = 0
 
 def new_fnid(fn):
+    """
+    Generate id for closures.
+    """
     global idx
     idx += 1
     fnids[idx] = fn
@@ -32,5 +35,7 @@ def enter():
         return fnids[int(request.values['fnid'])]()
     return aform()
 
+
 if __name__ == '__main__':
     app.run()
+

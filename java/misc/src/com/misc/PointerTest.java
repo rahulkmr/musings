@@ -1,6 +1,5 @@
 package com.misc;
 
-import java.lang.reflect.Method;
 
 public class PointerTest
 {

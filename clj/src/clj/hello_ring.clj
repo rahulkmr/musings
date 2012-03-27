@@ -1,4 +1,5 @@
-(ns clj.hello-ring
+(ns clj.hello_ring
+  (use ring.util.serve)
   (use ring.adapter.jetty))
 
 (defn app [req]
@@ -6,8 +7,5 @@
    :headers {"Content-Type" "text/html"}
    :body "Hello World from Ring."})
 
-(defonce server
-  (future (run-jetty #'app {:port 8080 :join? false})))
-
 (defn -main [& args]
-  server)
+  (serve app))

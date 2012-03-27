@@ -1,4 +1,3 @@
-
 #!/usr/bin/env python
 
 # This is a demonstration script for Facebook Chat
@@ -11,8 +10,6 @@
 # `get_facebook_client` function should have to change.
 
 import sys
-import os
-
 
 def get_facebook_client():
     import facebook
@@ -53,7 +50,7 @@ def get_facebook_client():
 
 
 from pyxmpp.sasl.core import ClientAuthenticator
-from pyxmpp.sasl.core import Response, Failure, Success
+from pyxmpp.sasl.core import Response, Success
 
 class XFacebookPlatformClientAuthenticator(ClientAuthenticator):
     def __init__(self, password_manager, fb_client=None):
@@ -89,7 +86,7 @@ class FacebookChatClient(Client):
         self.sent = False
 
     def session_started(self):
-        self.get_stream().set_message_handler(`chat`, self.got_message)
+        self.get_stream().set_message_handler('chat', self.got_message)
         self.get_stream().send(Presence())
 
     def idle(self):

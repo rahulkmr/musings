@@ -43,22 +43,23 @@ is much faster than XML and also uses less bandwith. Go to
 http://undefined.org/python/#simplejson to download it, or do
 apt-get install python-simplejson on a Debian-like system.
 """
-
-import sys
-import time
+import binascii
+import hmac
+import httplib
+import mimetypes
 import struct
+import time
 import urllib
 import urllib2
-import httplib
-import hmac
+import urlparse
+
+from django.conf import settings
+
+
 try:
     import hashlib
 except ImportError:
     import md5 as hashlib
-from django.conf import settings
-import binascii
-import urlparse
-import mimetypes
 
 # try to use simplejson first, otherwise fallback to XML
 RESPONSE_FORMAT = 'JSON'

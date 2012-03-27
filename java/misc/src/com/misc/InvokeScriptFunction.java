@@ -5,6 +5,12 @@ import javax.script.ScriptEngine;
 import javax.script.ScriptEngineManager;
 
 public class InvokeScriptFunction {
+    /**
+     * Constructs a new instance.
+     */
+    public InvokeScriptFunction() {
+    }
+
     public static void main(String[] args) throws Exception {
         ScriptEngineManager manager = new ScriptEngineManager();
         ScriptEngine engine = manager.getEngineByName("JavaScript");

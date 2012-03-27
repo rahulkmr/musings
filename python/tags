@@ -1,0 +1,325 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+A	rope_test.py	/^class A(object):$/;"	c
+AClass	rope_test.py	/^class AClass(object):$/;"	c
+APP_ID	fbchat.py	/^APP_ID = None$/;"	v
+APP_KEY	fbchat.py	/^APP_KEY = None$/;"	v
+APP_SECRET	fbchat.py	/^APP_SECRET = None$/;"	v
+AuthProxy	facebook.py	/^class AuthProxy(AuthProxy):$/;"	c
+B	rope_test.py	/^class B(object):$/;"	c
+C	descriptor.py	/^class C(object):$/;"	c
+Closure	serialize_closures.py	/^class Closure(object):$/;"	c
+Command	pbs.py	/^class Command(object):$/;"	c
+CommandNotFound	pbs.py	/^class CommandNotFound(Exception): pass$/;"	c
+D	descriptor.py	/^class D(object):$/;"	c
+DE_INDENT	html_lexer.py	/^DE_INDENT = intern('de_indent')$/;"	v
+EchoClient	diesel_test.py	/^class EchoClient(Client):$/;"	c
+Environment	pbs.py	/^class Environment(dict):$/;"	c
+ErrorReturnCode	pbs.py	/^class ErrorReturnCode(Exception):$/;"	c
+FACEBOOK_SECURE_URL	facebook.py	/^FACEBOOK_SECURE_URL = 'https:\/\/api.facebook.com\/restserver.php'$/;"	v
+FACEBOOK_URL	facebook.py	/^FACEBOOK_URL = 'http:\/\/api.facebook.com\/restserver.php'$/;"	v
+FACEBOOK_VIDEO_URL	facebook.py	/^FACEBOOK_VIDEO_URL = 'http:\/\/api-video.facebook.com\/restserver.php'$/;"	v
+Facebook	facebook.py	/^class Facebook(object):$/;"	c
+FacebookChatClient	chat_eg.py	/^class FacebookChatClient(Client):$/;"	c
+FacebookChatClient	fbchat.py	/^class FacebookChatClient(Client):$/;"	c
+FacebookError	facebook.py	/^class FacebookError(Exception):$/;"	c
+FriendsProxy	facebook.py	/^class FriendsProxy(FriendsProxy):$/;"	c
+HTML_NC_TAG	html_lexer.py	/^HTML_NC_TAG = intern('html_nc_tag')$/;"	v
+HTML_TAG	html_lexer.py	/^HTML_TAG = intern('html_tag')$/;"	v
+HTML_TAG_CLOSE	html_lexer.py	/^HTML_TAG_CLOSE = intern('html_tag_close')$/;"	v
+HTML_TAG_OPEN	html_lexer.py	/^HTML_TAG_OPEN = intern('html_tag_open')$/;"	v
+INDENT	html_lexer.py	/^INDENT = intern('indent')$/;"	v
+JINJA_OUTPUT_TAG	html_lexer.py	/^JINJA_OUTPUT_TAG = intern('jinja_output_tag')$/;"	v
+JINJA_TAG	html_lexer.py	/^JINJA_TAG = intern('jinja_tag')$/;"	v
+Klass	metaclass.py	/^class Klass(object):$/;"	c
+Lexer	html_lexer.py	/^class Lexer(object):$/;"	c
+METHODS	facebook.py	/^METHODS = {$/;"	v
+Meta	metaclass.py	/^class Meta(type):$/;"	c
+MyApp	p3/empty.py	/^class MyApp(ShowBase):$/;"	c
+MyApp	p3/scenery.py	/^class MyApp(ShowBase):$/;"	c
+N	ge/mass_resolve.py	/^N = 1000$/;"	v
+PROJECT_URL	pbs.py	/^PROJECT_URL = "https:\/\/github.com\/amoffat\/pbs"$/;"	v
+Person	properties.py	/^class Person(object):$/;"	c
+PhotosProxy	facebook.py	/^class PhotosProxy(PhotosProxy):$/;"	c
+Proxy	facebook.py	/^class Proxy(object):$/;"	c
+RESPONSE_FORMAT	facebook.py	/^                RESPONSE_FORMAT = 'XML'$/;"	v
+RESPONSE_FORMAT	facebook.py	/^RESPONSE_FORMAT = 'JSON'$/;"	v
+SelfWrapper	pbs.py	/^class SelfWrapper(object):$/;"	c
+Struct	fbchat.py	/^class Struct:$/;"	c
+TEXT	html_lexer.py	/^TEXT = intern('text')$/;"	v
+Translator	html_lexer.py	/^class Translator(object):$/;"	c
+VERSION	facebook.py	/^VERSION = '1.0a2'$/;"	v
+VERSION	pbs.py	/^VERSION = "0.5"$/;"	v
+VideoProxy	facebook.py	/^class VideoProxy(VideoProxy):$/;"	c
+XFacebookPlatformClientAuthenticator	chat_eg.py	/^class XFacebookPlatformClientAuthenticator(ClientAuthenticator):$/;"	c
+XFacebookPlatformClientAuthenticator	fbchat.py	/^class XFacebookPlatformClientAuthenticator(ClientAuthenticator):$/;"	c
+Y	y.py	/^def Y(h):$/;"	f
+__all__	facebook.py	/^__all__ = ['Facebook','create_hmac']$/;"	v
+__call__	facebook.py	/^    def __call__(self, method=None, args=None, add_session_args=True, signed=False):$/;"	m	class:Proxy	file:
+__call__	facebook.py	/^    def __call__(self, method=None, args=None, secure=False, signed=False):$/;"	m	class:Facebook	file:
+__call__	html_lexer.py	/^    def __call__(self):$/;"	m	class:Lexer	file:
+__call__	html_lexer.py	/^    def __call__(self):$/;"	m	class:Translator	file:
+__call__	pbs.py	/^    def __call__(self, *args, **kwargs):$/;"	m	class:Command	file:
+__call__	serialize_closures.py	/^    def __call__(self, *args, **kwargs):$/;"	m	class:Closure	file:
+__encode_multipart_formdata	facebook.py	/^    def __encode_multipart_formdata(self, fields, files):$/;"	m	class:PhotosProxy	file:
+__encode_multipart_formdata	facebook.py	/^    def __encode_multipart_formdata(self, fields, files):$/;"	m	class:VideoProxy	file:
+__enter__	pbs.py	/^    def __enter__(self):$/;"	m	class:Command	file:
+__exit__	pbs.py	/^    def __exit__(self, typ, value, traceback):$/;"	m	class:Command	file:
+__fixup_param	facebook.py	/^def __fixup_param(name, klass, options, param):$/;"	f	file:
+__float__	pbs.py	/^    def __float__(self):$/;"	m	class:Command	file:
+__generate_facebook_method	facebook.py	/^def __generate_facebook_method(namespace, method_name, param_data):$/;"	f	file:
+__generate_proxies	facebook.py	/^def __generate_proxies():$/;"	f	file:
+__get__	descriptor.py	/^    def __get__(self, instance, cls):$/;"	m	class:D	file:
+__get_content_type	facebook.py	/^    def __get_content_type(self, filename):$/;"	m	class:PhotosProxy	file:
+__get_content_type	facebook.py	/^    def __get_content_type(self, filename):$/;"	m	class:VideoProxy	file:
+__getattr__	pbs.py	/^    def __getattr__(self, name):$/;"	m	class:SelfWrapper	file:
+__getattr__	pbs.py	/^    def __getattr__(self, p):$/;"	m	class:Command	file:
+__init__	chat_eg.py	/^    def __init__(self, password_manager, fb_client=None):$/;"	m	class:XFacebookPlatformClientAuthenticator
+__init__	chat_eg.py	/^    def __init__(self, to_uid, message, **kwargs):$/;"	m	class:FacebookChatClient
+__init__	descriptor.py	/^    def __init__(self, attr_name):$/;"	m	class:D
+__init__	facebook.py	/^    def __init__(self, api_key, secret_key, auth_token=None, app_name=None,$/;"	m	class:Facebook
+__init__	facebook.py	/^    def __init__(self, client, name):$/;"	m	class:Proxy
+__init__	facebook.py	/^    def __init__(self, code, msg, args=None):$/;"	m	class:FacebookError
+__init__	fbchat.py	/^    def __init__(self, **kwargs):$/;"	m	class:Struct
+__init__	fbchat.py	/^    def __init__(self, password_manager, fb_client=None):$/;"	m	class:XFacebookPlatformClientAuthenticator
+__init__	fbchat.py	/^    def __init__(self, to_uid, message, **kwargs):$/;"	m	class:FacebookChatClient
+__init__	html_lexer.py	/^    def __init__(self, lexer, debug=False, jinja_env=None):$/;"	m	class:Translator
+__init__	html_lexer.py	/^    def __init__(self, src):$/;"	m	class:Lexer
+__init__	metaclass.py	/^    def __init__(cls, classname, supers, classdict):$/;"	m	class:Meta
+__init__	p3/empty.py	/^    def __init__(self):$/;"	m	class:MyApp
+__init__	p3/scenery.py	/^    def __init__(self):$/;"	m	class:MyApp
+__init__	pbs.py	/^    def __init__(self, *args, **kwargs):$/;"	m	class:Environment
+__init__	pbs.py	/^    def __init__(self, full_cmd, stdout, stderr):$/;"	m	class:ErrorReturnCode
+__init__	pbs.py	/^    def __init__(self, path):            $/;"	m	class:Command
+__init__	pbs.py	/^    def __init__(self, self_module):$/;"	m	class:SelfWrapper
+__init__	rope_test.py	/^    def __init__(self):$/;"	m	class:AClass
+__init__	rope_test.py	/^    def __init__(self):$/;"	m	class:B
+__init__	serialize_closures.py	/^    def __init__(self, fn_closure):$/;"	m	class:Closure
+__int__	pbs.py	/^    def __int__(self):$/;"	m	class:Command	file:
+__long__	pbs.py	/^    def __long__(self):$/;"	m	class:Command	file:
+__metaclass__	metaclass.py	/^    __metaclass__ = Meta$/;"	v	class:Klass
+__missing__	pbs.py	/^    def __missing__(self, k):$/;"	m	class:Environment	file:
+__new__	metaclass.py	/^    def __new__(meta, classname, supers, classdict):$/;"	m	class:Meta	file:
+__repr__	pbs.py	/^    def __repr__(self):$/;"	m	class:Command	file:
+__set__	descriptor.py	/^    def __set__(self, instance, val):$/;"	m	class:D	file:
+__setitem__	pbs.py	/^    def __setitem__(self, k, v):$/;"	m	class:Environment	file:
+__str__	facebook.py	/^    def __str__(self):$/;"	m	class:FacebookError	file:
+__str__	pbs.py	/^    def __str__(self):$/;"	m	class:Command	file:
+__unicode__	pbs.py	/^    def __unicode__(self):$/;"	m	class:Command	file:
+_add_session_args	facebook.py	/^    def _add_session_args(self, args=None):$/;"	m	class:Facebook
+_build_post_args	facebook.py	/^    def _build_post_args(self, method, args=None, signed=False):$/;"	m	class:Facebook
+_check_error	facebook.py	/^    def _check_error(self, response):$/;"	m	class:Facebook
+_fact	cps.py	/^    def _fact(n, k):$/;"	f	function:factorial
+_hash_args	facebook.py	/^    def _hash_args(self, args, secret=None):$/;"	m	class:Facebook
+_parse_response	facebook.py	/^    def _parse_response(self, response, method, format=None):$/;"	m	class:Facebook
+_parse_response_dict	facebook.py	/^    def _parse_response_dict(self, node):$/;"	m	class:Facebook
+_parse_response_item	facebook.py	/^    def _parse_response_item(self, node):$/;"	m	class:Facebook
+_parse_response_list	facebook.py	/^    def _parse_response_list(self, node):$/;"	m	class:Facebook
+_test	descriptor.py	/^    _test = 10$/;"	v	class:C
+_trampoline	cps.py	/^    def _trampoline(bouncer):$/;"	f	function:trampoline
+a	subset.py	/^a = [1, 2, 3, 4]$/;"	v
+a	subsets.py	/^a = [3, 4, 9, 14, 15, 19, 28, 37, 47, 50, 54, 56, 59, 61, 70, 73, 78, 81, 92, 95, 97, 99]$/;"	v
+a_func	rope_test.py	/^def a_func(new_param):$/;"	f
+a_method	rope_test.py	/^    def a_method(self):$/;"	m	class:A
+a_method	rope_test.py	/^    def a_method(self, arg):$/;"	m	class:AClass
+a_var	rope_test.py	/^a_var = create_aclass()$/;"	v
+add_session_args	fbchat.py	/^def add_session_args(args, session):$/;"	f
+aform	closures.py	/^def aform():$/;"	f
+aform	closures2.py	/^def aform():$/;"	f
+ambient	p3/lights.py	/^ambient = AmbientLight('ambient')$/;"	v
+ambientLight	p3/lights.py	/^ambientLight = AmbientLight('ambientLight')$/;"	v
+ambientLightNP	p3/lights.py	/^ambientLightNP = render.attachNewNode(ambientLight)$/;"	v
+ambientNP	p3/lights.py	/^ambientNP = x.attachNewNode(ambient)$/;"	v
+api_key	facebook.py	/^    api_key = ''$/;"	v	class:Facebook
+app	closures.py	/^app = Flask(__name__)$/;"	v
+app	closures2.py	/^app = Flask(__name__)$/;"	v
+app	diesel_chat.py	/^app = Application()$/;"	v
+app	diesel_test.py	/^app = Application()$/;"	v
+app	p3/empty.py	/^app = MyApp()$/;"	v
+app	p3/scenery.py	/^app = MyApp()$/;"	v
+arefriends	facebook.py	/^    arefriends = facebook.friends.areFriends([friends[0]['uid']], [friends[1]['uid']])$/;"	v	class:Facebook
+b	rope_test.py	/^b = B()$/;"	v
+b_cd	pbs.py	/^    def b_cd(self, path):$/;"	m	class:Environment
+b_echo	pbs.py	/^    def b_echo(self, *args, **kwargs):$/;"	m	class:Environment
+b_func	rope_test.py	/^def b_func():$/;"	f
+b_which	pbs.py	/^    def b_which(self, program):$/;"	m	class:Environment
+ball	pyg/bouncy.py	/^ball = pygame.image.load('ball.gif')$/;"	v
+ballrect	pyg/bouncy.py	/^    ballrect = ballrect.move(speed)$/;"	v
+ballrect	pyg/bouncy.py	/^ballrect = ball.get_rect()$/;"	v
+bin_nums	hex_to_bin.py	/^            bin_nums = [bin(int(num, 16))[2:].zfill(8)$/;"	v
+black	pyg/bouncy.py	/^black = 0, 0, 0$/;"	v
+build_post_args	fbchat.py	/^def build_post_args(method, args, secret):$/;"	f
+challenge	chat_eg.py	/^    def challenge(self, challenge):$/;"	m	class:XFacebookPlatformClientAuthenticator
+challenge	fbchat.py	/^    def challenge(self, challenge):$/;"	m	class:XFacebookPlatformClientAuthenticator
+change_bar	ge/concurrent_updates.py	/^def change_bar(common):$/;"	f
+change_foo	ge/concurrent_updates.py	/^def change_foo(common):$/;"	f
+chat_server	diesel_chat.py	/^def chat_server(addr):$/;"	f
+check_fnid	closures2.py	/^def check_fnid():$/;"	f
+check_indent	html_lexer.py	/^    def check_indent(self, line):$/;"	m	class:Lexer
+check_session	facebook.py	/^    def check_session(self, request, params=None):$/;"	m	class:Facebook
+create	pbs.py	/^    def create(cls, program, raise_exc=True):$/;"	m	class:Command
+createToken	facebook.py	/^    def createToken(self):$/;"	m	class:AuthProxy
+create_aclass	rope_test.py	/^def create_aclass(*args, **kwds):$/;"	f
+create_hmac	facebook.py	/^def create_hmac(tbhashed):$/;"	f
+desired_fib	prime_fib.py	/^desired_fib = list(islice(desired_fib_gen, 1))[0]$/;"	v
+desired_fib_gen	prime_fib.py	/^desired_fib_gen = dropwhile(lambda x: x < limit or not is_prime(x),$/;"	v
+desired_subsets	subsets.py	/^desired_subsets = []$/;"	v
+desired_subsets	subsets.py	/^desired_subsets = ifilter(subset_sum_check, subsets)$/;"	v
+directionalLight	p3/lights.py	/^directionalLight = DirectionalLight('directionalLight')$/;"	v
+directionalLightNP	p3/lights.py	/^directionalLightNP = render.attachNewNode(directionalLight)$/;"	v
+dispatch_fn	closures2.py	/^def dispatch_fn():$/;"	f
+do_echos	diesel_test.py	/^def do_echos():$/;"	f
+echo	diesel_test.py	/^    def echo(self, message):$/;"	m	class:EchoClient
+echo	ge/echo.py	/^def echo(socket, addr):$/;"	f
+encode_multipart_formdata	multipart.py	/^def encode_multipart_formdata(fields=None, files=None):$/;"	f
+enter	closures.py	/^def enter():$/;"	f
+env	pbs.py	/^    env = Environment(f_globals)$/;"	v
+env	pbs.py	/^    env = Environment(frame.f_globals)$/;"	v
+extract_values	html_lexer.py	/^    def extract_values(self, tag_name, line):$/;"	m	class:Lexer
+f_globals	pbs.py	/^    f_globals = {}$/;"	v
+facebook	facebook.py	/^    facebook = Facebook(api_key, secret_key)$/;"	v	class:Facebook
+facebook_method	facebook.py	/^    def facebook_method(self, *args, **kwargs):$/;"	f	function:__generate_facebook_method
+fact	y.py	/^def fact(recur):$/;"	f
+factorial	cps.py	/^def factorial(n):$/;"	f
+fib_gen	euler2.py	/^def fib_gen():$/;"	f
+fib_gen	prime_fib.py	/^def fib_gen():$/;"	f
+finish	chat_eg.py	/^    def finish(self,data):$/;"	m	class:XFacebookPlatformClientAuthenticator
+finish	fbchat.py	/^    def finish(self,data):$/;"	m	class:XFacebookPlatformClientAuthenticator
+finished	ge/mass_resolve.py	/^finished = 0$/;"	v
+fnids	closures.py	/^fnids = {}$/;"	v
+fnids	closures2.py	/^fnids = {}$/;"	v
+for_pickle	serialize_closures.py	/^for_pickle = Closure(greet)$/;"	v
+format_output	html_lexer.py	/^    def format_output(self, input):$/;"	m	class:Translator
+friends	facebook.py	/^    friends = facebook.friends.get()$/;"	v	class:Facebook
+friends	facebook.py	/^    friends = facebook.users.getInfo(friends[0:5], ['name', 'birthday', 'relationship_status'])$/;"	v	class:Facebook
+g	gevent_link.py	/^g = gevent.spawn(tasklet)$/;"	v
+get	facebook.py	/^    def get(self, **kwargs):$/;"	m	class:FriendsProxy
+getAccessToken	fbchat.py	/^def getAccessToken(code):$/;"	f
+getCode	fbchat.py	/^def getCode():$/;"	f
+getSession	facebook.py	/^    def getSession(self):$/;"	m	class:AuthProxy
+getSessionKey	fbchat.py	/^def getSessionKey(token, code=None):$/;"	f
+getSessionSecret	fbchat.py	/^def getSessionSecret(access_token):$/;"	f
+getUid	fbchat.py	/^def getUid(access_token):$/;"	f
+get_add_url	facebook.py	/^    def get_add_url(self, next=None):$/;"	m	class:Facebook
+get_app_url	facebook.py	/^    def get_app_url(self, path=''):$/;"	m	class:Facebook
+get_authorize_url	facebook.py	/^    def get_authorize_url(self, next=None, next_cancel=None):$/;"	m	class:Facebook
+get_content_type	multipart.py	/^def get_content_type(filename):$/;"	f
+get_ext_perm_url	facebook.py	/^    def get_ext_perm_url(self, ext_perm, next=None, popup=False):$/;"	m	class:Facebook
+get_facebook_client	chat_eg.py	/^def get_facebook_client():$/;"	f
+get_facebook_client	fbchat.py	/^def get_facebook_client():$/;"	f
+get_graph_url	facebook.py	/^    def get_graph_url(self, path='', **args):$/;"	m	class:Facebook
+get_login_url	facebook.py	/^    def get_login_url(self, next=None, popup=False, canvas=True,$/;"	m	class:Facebook
+get_rc_exc	pbs.py	/^def get_rc_exc(rc):$/;"	f
+get_url	facebook.py	/^    def get_url(self, page, **args):$/;"	m	class:Facebook
+global_fb_client	chat_eg.py	/^    global_fb_client = get_facebook_client()$/;"	v
+global_fb_client	fbchat.py	/^    global_fb_client = get_facebook_client()$/;"	v
+globs	pbs.py	/^    globs = globals()$/;"	v
+got_message	chat_eg.py	/^    def got_message(self, stanza):$/;"	m	class:FacebookChatClient
+got_message	fbchat.py	/^    def got_message(self, stanza):$/;"	m	class:FacebookChatClient
+greet	serialize_closures.py	/^greet = lambda: "Hello %s" % name$/;"	v
+handle_echo	diesel_test.py	/^def handle_echo(remote_addr):$/;"	f
+handle_html	html_lexer.py	/^    def handle_html(self, line):$/;"	m	class:Lexer
+handle_html_tag	html_lexer.py	/^    def handle_html_tag(self, token_type, lexon):$/;"	m	class:Translator
+handle_jinja	html_lexer.py	/^    def handle_jinja(self, line):$/;"	m	class:Lexer
+handle_output	html_lexer.py	/^    def handle_output(self, line):$/;"	m	class:Lexer
+handle_text	html_lexer.py	/^    def handle_text(self, line):$/;"	m	class:Lexer
+hash_args	fbchat.py	/^def hash_args(args, secret):$/;"	f
+hash_email	facebook.py	/^    def hash_email(self, email):$/;"	m	class:Facebook
+identity	cps.py	/^identity = lambda x: x$/;"	v
+idle	chat_eg.py	/^    def idle(self):$/;"	m	class:FacebookChatClient
+idle	fbchat.py	/^    def idle(self):$/;"	m	class:FacebookChatClient
+idx	closures.py	/^idx = 0$/;"	v
+idx	closures2.py	/^idx = 0$/;"	v
+info	facebook.py	/^    info = facebook.users.getInfo([facebook.uid], ['name', 'birthday', 'affiliations', 'sex'])[0]$/;"	v	class:Facebook
+is_exe	pbs.py	/^    def is_exe(fpath):$/;"	f	function:which
+is_prime	prime_fib.py	/^def is_prime(num):$/;"	f
+job	ge/mass_resolve.py	/^def job(url):$/;"	f
+jobs	ge/downloads.py	/^jobs = [gevent.spawn(print_head, url) for url in urls]$/;"	v
+json	facebook.py	/^class json(object): pass$/;"	c
+key_val_pat	html_lexer.py	/^    key_val_pat = re.compile(r'\\s+ (.+?) \\s*=\\s* (["\\']) ([^\\2]+?) \\2', re.X)$/;"	v	class:Lexer
+lexer	html_lexer.py	/^lexer = Lexer(iter(template.splitlines()))$/;"	v
+limit	prime_fib.py	/^limit = 227000$/;"	v
+logger	fbchat.py	/^    logger = logging.getLogger()$/;"	v
+login	facebook.py	/^    def login(self, popup=False):$/;"	m	class:Facebook
+login_url	fbchat.py	/^login_url = 'https:\/\/graph.facebook.com\/oauth\/authorize?'$/;"	v
+max_crossing_subarray	subset_sum.py	/^def max_crossing_subarray(a, low, mid, high):$/;"	f
+max_subarray	subset_sum.py	/^def max_subarray(a, low, high):$/;"	f
+name	serialize_closures.py	/^name = "Rahul"$/;"	v
+new_fnid	closures.py	/^def new_fnid(fn):$/;"	f
+next_fib	prime_fib.py	/^next_fib = desired_fib + 1$/;"	v
+no_content_html_tags	html_lexer.py	/^no_content_html_tags = set(map(intern,$/;"	v
+no_content_jinja_tags	html_lexer.py	/^no_content_jinja_tags = set(map(intern,$/;"	v
+oauth2_access_token	facebook.py	/^    def oauth2_access_token(self, code, next, required_permissions=None):$/;"	m	class:Facebook
+p	pipe.py	/^def p(val, *fns):$/;"	f
+palindrome_gen	long_palindrome.py	/^def palindrome_gen(a):$/;"	f
+parse_tag_name	html_lexer.py	/^def parse_tag_name(tag_name):$/;"	f
+parse_text_contents	html_lexer.py	/^    def parse_text_contents(self, contents):$/;"	m	class:Translator
+photos	facebook.py	/^    photos = facebook.photos.getAlbums(facebook.uid)$/;"	v	class:Facebook
+pipe	test.py	/^def pipe(cur_val, *fns):$/;"	f
+pool	ge/mass_resolve.py	/^pool = Pool(100)$/;"	v
+pow	new_scratch/scratch2.py	/^def pow(x, y):$/;"	f
+prepend_stack	pbs.py	/^    prepend_stack = []$/;"	v	class:Command
+prime_divisors_sum	prime_fib.py	/^prime_divisors_sum = sum(d for d in range(2, next_fib\/2) if next_fib % d == 0$/;"	v
+print_head	ge/downloads.py	/^def print_head(url):$/;"	f
+project_opened	.ropeproject/config.py	/^def project_opened(project):$/;"	f
+propogate	ge/concurrent_updates.py	/^def propogate():$/;"	f
+quine	quine2.py	/^def quine(source):$/;"	f
+rc_exc_cache	pbs.py	/^rc_exc_cache = {}$/;"	v
+rc_exc_regex	pbs.py	/^rc_exc_regex = re.compile("ErrorReturnCode_(\\d+)")$/;"	v
+receiver	gevent_link.py	/^def receiver(g):$/;"	f
+redirect_uri	fbchat.py	/^redirect_uri = 'http:\/\/www.facebook.com\/connect\/login_success.html'$/;"	v
+refact	rope_test.py	/^def refact(a, b):$/;"	f
+request	deshorten.py	/^request = Request(sys.argv[1])$/;"	v
+request_extended_permission	facebook.py	/^    def request_extended_permission(self, ext_perm, popup=False):$/;"	m	class:Facebook
+resolve_program	pbs.py	/^def resolve_program(program):$/;"	f
+run_repl	pbs.py	/^def run_repl(env):$/;"	f
+screen	pyg/bouncy.py	/^screen = pygame.display.set_mode(size)$/;"	v
+secret_key	facebook.py	/^    secret_key = ''$/;"	v	class:Facebook
+server	ge/echo.py	/^    server = StreamServer(('0.0.0.0', 6000), echo)$/;"	v
+session_started	chat_eg.py	/^    def session_started(self):$/;"	m	class:FacebookChatClient
+session_started	fbchat.py	/^    def session_started(self):$/;"	m	class:FacebookChatClient
+set_prefs	.ropeproject/config.py	/^def set_prefs(prefs):$/;"	f
+speed	pyg/bouncy.py	/^speed = [1, 1]$/;"	v
+spinCameraTask	p3/scenery.py	/^    def spinCameraTask(self, task):$/;"	m	class:MyApp
+start	chat_eg.py	/^    def start(self, ignored_username, ignored_authzid):$/;"	m	class:XFacebookPlatformClientAuthenticator
+start	fbchat.py	/^    def start(self, ignored_username, ignored_authzid):$/;"	m	class:XFacebookPlatformClientAuthenticator
+stderr	pbs.py	/^    def stderr(self):$/;"	m	class:Command
+stdout	pbs.py	/^    def stdout(self):$/;"	m	class:Command
+store_fnid	closures2.py	/^def store_fnid(fn):$/;"	f
+subset_sum_check	subsets.py	/^def subset_sum_check(subset):$/;"	f
+subsets	subset.py	/^subsets = {}$/;"	v
+subsets	subsets.py	/^subsets = chain.from_iterable(combinations(a, r) for r in range(3, len(a) + 1))$/;"	v
+tasklet	gevent_link.py	/^def tasklet():$/;"	f
+test	descriptor.py	/^    test = D('_test')$/;"	v	class:C
+test_data	long_palindrome.py	/^test_data =" FourscoreandsevenyearsagoourfaathersbroughtforthonthiscontainentanewnationconceivedinzLibertyanddedicatedtothepropositionthatallmenarecreatedequalNowweareengagedinagreahtcivilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth "$/;"	v
+test_data	subset_sum.py	/^test_data =" FourscoreandsevenyearsagoourfaathersbroughtforthonthiscontainentanewnationconceivedinzLibertyanddedicatedtothepropositionthatallmenarecreatedequalNowweareengagedinagreahtcivilwartestingwhetherthatnaptionoranynartionsoconceivedandsodedicatedcanlongendureWeareqmetonagreatbattlefiemldoftzhatwarWehavecometodedicpateaportionofthatfieldasafinalrestingplaceforthosewhoheregavetheirlivesthatthatnationmightliveItisaltogetherfangandproperthatweshoulddothisButinalargersensewecannotdedicatewecannotconsecratewecannothallowthisgroundThebravelmenlivinganddeadwhostruggledherehaveconsecrateditfaraboveourpoorponwertoaddordetractTgheworldadswfilllittlenotlenorlongrememberwhatwesayherebutitcanneverforgetwhattheydidhereItisforusthelivingrathertobededicatedheretotheulnfinishedworkwhichtheywhofoughtherehavethusfarsonoblyadvancedItisratherforustobeherededicatedtothegreattdafskremainingbeforeusthatfromthesehonoreddeadwetakeincreaseddevotiontothatcauseforwhichtheygavethelastpfullmeasureofdevotionthatweherehighlyresolvethatthesedeadshallnothavediedinvainthatthisnationunsderGodshallhaveanewbirthoffreedomandthatgovernmentofthepeoplebythepeopleforthepeopleshallnotperishfromtheearth "$/;"	v
+thunk	cps.py	/^thunk = lambda fn, *args, **kwargs: lambda: fn(*args, **kwargs)$/;"	v
+trampoline	cps.py	/^def trampoline(fn):$/;"	f
+translator	html_lexer.py	/^translator = Translator(lexer, debug=True)$/;"	v
+truncate_cap	pbs.py	/^    truncate_cap = 200$/;"	v	class:ErrorReturnCode
+unicode_urlencode	facebook.py	/^    def unicode_urlencode(self, params):$/;"	m	class:Facebook
+upload	facebook.py	/^    def upload(self, image, aid=None, uid=None, caption=None, size=(720, 720), filename=None, callback=None):$/;"	m	class:PhotosProxy
+upload	facebook.py	/^    def upload(self, video, aid=None, title=None, description=None, filename=None, uid=None, privacy=None, callback=None):$/;"	m	class:VideoProxy
+urlread	facebook.py	/^    def urlread(url, data=None):$/;"	f
+urlread	facebook.py	/^    def urlread(url, data=None, headers=None):$/;"	f
+urls	ge/downloads.py	/^urls = ['http:\/\/www.google.com', 'http:\/\/www.yandex.com', 'http:\/\/www.python.org']$/;"	v
+validate_cookie_signature	facebook.py	/^    def validate_cookie_signature(self, cookies):$/;"	m	class:Facebook
+validate_iframe	facebook.py	/^    def validate_iframe(self, request):$/;"	m	class:Facebook
+validate_oauth_cookie_signature	facebook.py	/^    def validate_oauth_cookie_signature(self, cookies):$/;"	m	class:Facebook
+validate_oauth_session	facebook.py	/^    def validate_oauth_session(self, session_json):$/;"	m	class:Facebook
+validate_signature	facebook.py	/^    def validate_signature(self, post, prefix='fb_sig', timeout=None):$/;"	m	class:Facebook
+w_link	closures.py	/^def w_link():$/;"	f
+w_link	closures2.py	/^def w_link():$/;"	f
+wait	pbs.py	/^    def wait(self):$/;"	m	class:Command
+which	pbs.py	/^def which(program):$/;"	f
+whitespace	hex_to_bin.py	/^whitespace = re.compile(r'\\s+')$/;"	v
+whitespace	html_lexer.py	/^    whitespace = re.compile(r'\\s+')$/;"	v	class:Lexer
+x	p3/lights.py	/^x = loader.loadModel('panda')$/;"	v
+x	rope_test.py	/^    x = 2 * 3 + 1$/;"	v
+xmpp_client	chat_eg.py	/^    xmpp_client = FacebookChatClient($/;"	v
+xmpp_client	fbchat.py	/^    xmpp_client = FacebookChatClient($/;"	v
+y	p3/lights.py	/^y = loader.loadModel('panda')$/;"	v

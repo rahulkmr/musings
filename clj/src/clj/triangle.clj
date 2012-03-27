@@ -1,5 +1,5 @@
-(ns clj.rect
-  (:require '[clojure.contrib.math :as m])
+(ns clj.traiangle
+  (:require [clojure.contrib.math :as m])
   (:import [javax.swing JFrame JPanel]
            [java.awt Color]
            [java.awt.event WindowAdapter]))

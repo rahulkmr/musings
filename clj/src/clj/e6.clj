@@ -15,3 +15,5 @@
 (defn sum-sqr-diff
   [lower upper]
   (- (sum-sqr lower upper) (sqr-sum lower upper)))
+
+(sum-sqr-diff 1 20)

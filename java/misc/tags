@@ -1,0 +1,16 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.9~svn20110310	//
+InvokeScriptFunction	src/com/misc/InvokeScriptFunction.java	/^public class InvokeScriptFunction {$/;"	c
+JsEval	src/com/misc/JsEval.java	/^public class JsEval {$/;"	c
+PointerTest	src/com/misc/PointerTest.java	/^public class PointerTest$/;"	c
+com.misc	src/com/misc/InvokeScriptFunction.java	/^package com.misc;$/;"	p
+com.misc	src/com/misc/JsEval.java	/^package com.misc;$/;"	p
+com.misc	src/com/misc/PointerTest.java	/^package com.misc;$/;"	p
+main	src/com/misc/InvokeScriptFunction.java	/^    public static void main(String[] args) throws Exception {$/;"	m	class:InvokeScriptFunction
+main	src/com/misc/JsEval.java	/^    public static void main(String[] args) throws Exception {$/;"	m	class:JsEval
+main	src/com/misc/PointerTest.java	/^    public static void main(String[] args) throws Exception$/;"	m	class:PointerTest
+square	src/com/misc/PointerTest.java	/^    public static double square(double x)$/;"	m	class:PointerTest

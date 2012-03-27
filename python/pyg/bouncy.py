@@ -11,9 +11,10 @@ screen = pygame.display.set_mode(size)
 ball = pygame.image.load('ball.gif')
 ballrect = ball.get_rect()
 
-while 1:
+while True:
     for event in pygame.event.get():
-        if event.type == pygame.QUIT: sys.exit()
+        if event.type == pygame.QUIT:
+            sys.exit()
 
     ballrect = ballrect.move(speed)
     if ballrect.left < 0 or ballrect.right > width:
