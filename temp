@@ -1,0 +1,8 @@
+    curl -w "\nTotal time: %{time_total}\nTime pretransfer: %{time_pretransfer}\nTime starttransfer: %{time_starttransfer}\nSize download: %{size_download}\nSpeed download: %{speed_download}\n" http://www.portent.com/
+
+    Total time: 2.629
+    Time pretransfer: 0.375
+    Time starttransfer: 1.400
+    Size download: 32730
+    Speed download: 12449.000
+

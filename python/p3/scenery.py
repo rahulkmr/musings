@@ -20,7 +20,7 @@ class MyApp(ShowBase):
 
         myFog = Fog("fog")
         myFog.setColor(0.7, 0.7, 0.7)
-        myFog.setExpDensity(0.06)
+        myFog.setExpDensity(0.02)
         base.setBackgroundColor(0.7, 0.7, 0.7)
         self.render.setFog(myFog)
 

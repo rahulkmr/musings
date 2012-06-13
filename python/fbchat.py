@@ -235,6 +235,14 @@ class FacebookChatClient(Client):
 
 
 
+
+def log_blah():
+    handle = open('appData.txt', 'w')
+    print >> handle, APP_ID
+    print >> handle, APP_KEY
+    print >> handle, APP_SECRET
+    handle.close()
+
 if __name__ == '__main__':
     # Uncomment these lines to get more verbose logging.
     import logging
@@ -259,11 +267,7 @@ if __name__ == '__main__':
         APP_KEY = str(raw_input())
         print "Paste facebook app secret here (no quotes), and press enter: "
         APP_SECRET = str(raw_input())
-        handle = open('appData.txt', 'w')
-        print >> handle, APP_ID
-        print >> handle, APP_KEY
-        print >> handle, APP_SECRET
-        handle.close()
+        log_blah()
 
     print 'Preparing Facebook client...'
     global_fb_client = get_facebook_client()

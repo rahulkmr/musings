@@ -49,7 +49,7 @@ module Cron
     end
   end
 
-  # Represents crontab file and handles mainpulations.
+  # Represents crontab file and handles manipulations.
   class Tab
     def initialize(user=nil)
       @user = user
