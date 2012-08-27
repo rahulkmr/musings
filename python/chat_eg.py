@@ -1,5 +1,4 @@
 #!/usr/bin/env python
-
 # This is a demonstration script for Facebook Chat
 # using the X-FACEBOOK-PLATFORM SASL mechanism.
 # It requires pyfacebook and pyxmpp to be installed.
@@ -7,11 +6,11 @@
 # This client only works for desktop applications (configured in the
 # developer app), and uses the old-style auth.getSession mechanism to get a
 # Facebook session.  For newer-style or web apps, only the
-# `get_facebook_client` function should have to change.
+# `get_fb_client` function should have to change.
 
 import sys
 
-def get_facebook_client():
+def get_fb_client():
     import facebook
     # Replace these with your app's credentials
     api_key = '6a21799fd685071120c650f8a8a50952'
@@ -115,7 +114,7 @@ if __name__ == '__main__':
     (XFacebookPlatformClientAuthenticator, None)
 
     print 'Preparing Facebook client...'
-    global_fb_client = get_facebook_client()
+    global_fb_client = get_fb_client()
 
     try:
         my_uid = str(global_fb_client.uid)

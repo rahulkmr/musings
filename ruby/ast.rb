@@ -7,5 +7,5 @@ def eval_ast(expr)
   return op.to_proc.call(*operands)
 end
 
-expr = [:+, [:*, 4, [:-@, 3]], [:/, 15, 5]]
+expr = [:+, [:*, 4, 3], [:/, 15, 5]]
 puts eval_ast(expr)
