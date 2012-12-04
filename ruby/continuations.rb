@@ -9,6 +9,7 @@ def goto(symbol)
   $lines[symbol].call
 end
 
+
 i = 0
 line 10
 puts i += 1

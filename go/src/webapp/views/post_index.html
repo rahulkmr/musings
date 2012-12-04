@@ -1,0 +1,19 @@
+{{ template "header.html" . }}
+
+<h1>Listing posts</h1>
+<table>
+    <tr>
+        <th>Name</th>
+        <th>Title</th>
+        <th>Content</th>
+    </tr>
+    {{ range . }}
+    <tr>
+        <td>{{ .Name }}</td>
+        <td>{{ .Title }}</td>
+        <td>{{ .Cotnent }}</td>
+    </tr>
+    {{ end }}
+</table>
+
+{{ template "footer.html" . }}

@@ -1,0 +1,94 @@
+## News section for AGG & PPW Secure Web Portals
+
+Ref: https://bugs.idt.net/browse/CAGG-1691
+
+### High level approach
+
+1. Implement a RssStubController which talks to the RSS producer. When it pulls feeds, it stores them in rails cache.
+
+2. It will return json representation of feeds so that it can be directly consumed by the ui. In case of cache hit, the server renders the page with feeds. In case of a miss, the server sends the page without the feeds and browser pulls it over ajax long-polling(tentative; please see details).
+
+3. The ui requirement are clear, but it will depend on what is being sent in the feed. The ui simile with help modals is what we do for "title" followed by "description". Per the original requirement, the feeds are richer than that. I am just mentioning it  - it isn'r really an issue.
+
+4. The updated requirement doesn't mention branding. I think the best option will be to have separate RSS endpoints for separate brands.
+
+### Details
+#
+> Wordpress backend (this will take care of a lot of the CMS requirements from the description)
+
+(This doesn't concern us, but to avoid any confusions, I am jotting down my understanding) 
+
+The content producers will use the wordpress dashboard to create and modify the news items. The system will have its own db outside of our application and will be only accessible to us via the rss feed. For our purpose, it doesn't matter if it's wordpress or some other CMS - we are only concerned with the RSS feed.
+
+> RSS feed of blog posts will be fed into Agg Portal
+
+That is, we will have an RSS endpoint which we can pull the feed from. RSS parser is a part of Ruby 1.9 stdlib. In case the ruby on production doesn't have rss parser as part of standard lib, we will be using https://rubygems.org/gems/feedzirra.
+
+RSS feed will be channel info followed by collection of items. As quoted on the doc page, parsing RSS feed is simple.
+
+    require 'rss'
+    require 'open-uri'
+
+    url = 'http://www.ruby-lang.org/en/feeds/news.rss'
+    open(url) do |rss|
+        feed = RSS::Parser.parse(rss)
+
+        # Channel metadata. We most likely won't need it.
+        puts "Title: #{feed.channel.title}"
+
+        # This is the list of blog posts
+        feed.items.each do |item|
+            puts "Item: #{item.title}"
+        end
+    end
+
+The list of blog posts will be the collection of items which we are interested in. I don't think we need anything from the channel metadata.
+
+In our app, we can build a RSS stub controller. The stub, when requested for feeds, checks the cache. If it's there in the cache, it servers them from the cache. Or else it pulls the feeds, encodes them into json suitable for the front-end consumption, and returns the json.
+
+> RSS feed should show up on the dashboard screen as per the attachment - UI requirements are in the attachment
+
+The ui looks simple. A fixed number of feeds appear on the user dashboard, and when the user clicks on any of the items, a modal window similar to what we are already using for "help" pops up.
+
+> RSS feed ("Feed" for short) should be cached for 6 hours in Rails
+
+Standard rails caching with swappable backend. We aren't going to use "page caching" because page caching goes around before filters and always uses disk - neither of them is desirable.
+
+http://guides.rubyonrails.org/caching_with_rails.html#activesupport-cache-store
+
+The expiry can be directly set in the configs, or can be set on individual methods. I plan to use Memcache if ops supports it. It's fast, reliable and plays nice with multiple web-server setup.
+
+# This is within RssStubController
+# It exposes json endpoint
+def feed
+    feeds = Rails.cache.fetch("newsfeeds", expires_in: 6.hours) do
+        # cache miss
+        # fetch rss feed here
+    end
+    render json: feeds
+end
+
+> Feed should be pulled through asynchronously (if not being loaded from cache)
+
+Lost you here. 
+
+1. User visits the url.
+
+2. Controller tries to load the feed.
+
+    2.1  Feed is in cache. Off to render.
+
+    2.2 No feed in cache. What do you mean by "pulled async" here? Render the page and then pull the feed over ajax? What will be the ui expectations in this case? Or do you mean evented pull with say eventmachine? That won't work because for the io to be evented, everything has to be evented viz. db driver, disk reads. Just making the network code evented won't make it evented.
+
+    Another possibility will be to render the page, load feeds after the page is rendered and push over websocket. I think that's overkill.
+
+    If your intention is to keep the page render time low, I think we should add a task to the taskqueue if the feed is empty, the page renders, the js opens a long-poll ajax connection(no timeout; wait for as long as the server takes to respond) for the feed. The user sees a standard spinner with "Updating news..."
+
+    But how much time lag are we expecting while pulling the feeds? Both Agg and RSS generator are in the same network, right?
+
+    Please clarify and suggest.
+
+> Feed should be able to pull certain category of post
+
+If the RSS producer supports querying, superb. If not, we will filter on our side.
+
