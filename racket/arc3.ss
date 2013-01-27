@@ -11,7 +11,7 @@
 
 (define (ask)
   (page
-    `(form ((action ,(cc)))
+    `(form ((action ,(cc)) (method "post"))
            "Your name: "
            (input ((name "get")))
            (input ((type "submit"))))))

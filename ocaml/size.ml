@@ -4,4 +4,4 @@ let size l =
         else size_iter (List.tl l) (accum + 1)
     in size_iter l 0;;
 
-size [1;2;3]
+Printf.printf "%d\n" (size [1;2;3])

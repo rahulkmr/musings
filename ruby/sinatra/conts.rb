@@ -8,11 +8,9 @@ $fnids = {}
 set :server, %w[webrick]
 
 def dispatch_fn(fnid)
-  fn = $fnids[fnid.to_i]
-  if fn.nil?
+  if (fn = $fnids[fnid.to_i]).nil?
     'Unknown or expired link'
   else
-    debugger
     fn[]
   end
 end
@@ -36,5 +34,5 @@ post '/' do
     $fnids[$counter += 1] = k
     halt "<a href=\"?fnid=#{$counter}\">Click here</a>"
   }
-  "Hello #{name}"
+  "<p>Hello #{name}</p>"
 end

@@ -1,0 +1,8 @@
+#lang racket
+
+(define listener (tcp-listen 12345))
+(let echo-server ()
+  (define-values (in out) (tcp-accept listener))
+  (thread (lambda () (copy-port in out)
+            (close-output-port out)))
+  (echo-server))

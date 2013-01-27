@@ -6,7 +6,7 @@
 
 (define (ask action)
   (page
-    `(form ((action ,action))
+    `(form ((action ,action) (method "post"))
            (input ((name "number")))
            (input ((type "submit"))))))
 

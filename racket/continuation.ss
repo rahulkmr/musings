@@ -1,8 +1,5 @@
 #lang racket
 
-(define (current-continuation)
-  (call/cc (lambda (cc) (cc cc))))
-
 (define fail-stack '())
 
 (define (fail)
@@ -14,7 +11,7 @@
         (back-track-point back-track-point)))))
 
 (define (amb choices)
-  (let ([cc (current-continuation)])
+  (let ([cc (call/cc (lambda (cc) cc))])
     (cond
       ([null? choices] (fail))
       ([pair? choices] (let ([choice (car choices)])
@@ -27,10 +24,10 @@
     (fail)
     #t))
 
-(let ([a (amb (list 1 2 3 4 5 6 7))]
-      [b (amb (list 1 2 3 4 5 6 7))]
-      [c (amb (list 1 2 3 4 5 6 7))])
-    
+(let ([a (amb (list 9 12 33 49 4 16 77))]
+      [b (amb (list 1 22 3 47 51 65 17))]
+      [c (amb (list 11 2 93 5 25 36 47))])
+
   ; We're looking for dimensions of a legal right
   ; triangle using the Pythagorean theorem:
   (assert (= (* c c) (+ (* a a) (* b b))))

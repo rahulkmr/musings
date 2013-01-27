@@ -8,15 +8,17 @@
 
 (define (ask msg action)
   (page
-    `(form [(action ,action)]
+    `(form [(action ,action) (method "post")]
            ,msg
            (input [(name "number")])
            (input [(type "submit")]))))
 
+(define (get req field)
+  (extract-binding/single field (request-bindings req)))
+
 (define (send-and-get msg)
-  (define (get req field) (extract-binding/single field (request-bindings req)))
   (define ret-req (send/suspend
-                    (lambda (k-url)
+                    (λ (k-url)
                       (ask msg k-url))))
   (string->number (get ret-req 'number)))
 

@@ -10,7 +10,3 @@ end
 
 puts test
 puts $cont.call 
-puts $cont.call 
-puts $cont.call 
-puts $cont.call 
-puts $cont.call 
