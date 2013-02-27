@@ -21,3 +21,5 @@
   [num]
   (println
     (su/join ", " (open-doors num))))
+
+(print-open-doors 50)

@@ -10,3 +10,4 @@
            (for [p primes :while (< p limit)
                  :when (= 0 (mod num p))] p))))
 
+(max-factor 98)

@@ -15,5 +15,5 @@ func foo(i int) {
 func main() {
 	i := test()
 	fmt.Println(i)
-	foo(i)
+	foo(i.(int))
 }

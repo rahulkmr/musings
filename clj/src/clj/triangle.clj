@@ -1,4 +1,4 @@
-(ns clj.traiangle
+(ns clj.triangle
   (:require [clojure.contrib.math :as m])
   (:import [javax.swing JFrame JPanel]
            [java.awt Color]
@@ -36,3 +36,4 @@
     (doto frame
       (.add panel)
       (.show))))
+(-main)

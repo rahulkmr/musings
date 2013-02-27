@@ -2,7 +2,10 @@
 change_barqU	propogateqU
 change_fooqeUfbchat]q(UgetSessionKeyq	UStructq
 U$XFacebookPlatformClientAuthenticatorqUgetSessionSecretqUAPP_KEYqUmy_uidqUgetUidqUglobal_fb_clientqUmessageqUgetCodeqU
-APP_SECRETqUbuild_post_argsqUto_uidqUFacebookChatClientqUloggerqU	login_urlqUxmpp_clientqUget_facebook_clientqUadd_session_argsqUlog_blahqUmy_jidqU	hash_argsqUAPP_IDqUredirect_uriq UgetAccessTokenq!eUeuler2]q"Ufib_genq#aUnew_scratch.scratch]q$(UAClassq%Ua_varq&eU	deshorten]q'Urequestq(aUclosures]q)(Unew_fnidq*Uw_linkq+Uidxq,Uappq-Ufnidsq.Uenterq/Uaformq0eU	rope_test]q1Upowq2aUfacebook]q3(Uurlreadq4UFacebookErrorq5UFriendsProxyq6Ujsonq7UFacebookq8UProxyq9U	AuthProxyq:Uapi_keyq;Ufriendq<UFACEBOOK_VIDEO_URLq=Uinfoq>UFACEBOOK_SECURE_URLq?U
-arefriendsq@UphotosqAUVERSIONqBU
-VideoProxyqCUfriendsqDUMETHODSqEUFACEBOOK_URLqFURESPONSE_FORMATqGUcreate_hmacqHUPhotosProxyqIUfacebookqJU
-secret_keyqKeUnew_scratch]qLUpowqMaUtest]qNUpipeqOaUnew_scratch.scratch2]qPUpowqQaUchat_eg]qR(Umy_jidqSUxmpp_clientqTU$XFacebookPlatformClientAuthenticatorqUUmessageqVUmy_uidqWUget_facebook_clientqXUglobal_fb_clientqYUto_uidqZUFacebookChatClientq[eu.
+APP_SECRETqUbuild_post_argsqUto_uidqUFacebookChatClientqUloggerqU	login_urlqUxmpp_clientqUget_facebook_clientqUadd_session_argsqUlog_blahqUmy_jidqU	hash_argsqUAPP_IDqUredirect_uriq UgetAccessTokenq!eUeuler2]q"Ufib_genq#aUnew_scratch.scratch]q$(UAClassq%Ua_varq&eU	deshorten]q'Urequestq(aUclosures]q)(Unew_fnidq*Uw_linkq+Uidxq,Uappq-Ufnidsq.Uenterq/Uaformq0eU
+html_lexer]q1(U	JINJA_TAGq2U
+Translatorq3UHTML_TAGq4Uno_content_jinja_tagsq5UINDENTq6UHTML_NC_TAGq7ULexerq8U	DE_INDENTq9UHTML_TAG_OPENq:UTEXTq;Ulexerq<Uno_content_html_tagsq=U
+translatorq>Uparse_tag_nameq?UJINJA_OUTPUT_TAGq@UtemplateqAUHTML_TAG_CLOSEqBUteUfacebook]qC(UurlreadqDUFacebookErrorqEUFriendsProxyqFUjsonqGUFacebookqHUProxyqIU	AuthProxyqJUapi_keyqKUfriendqLUFACEBOOK_VIDEO_URLqMUinfoqNUFACEBOOK_SECURE_URLqOU
+arefriendsqPUphotosqQUVERSIONqRU
+VideoProxyqSUfriendsqTUMETHODSqUUFACEBOOK_URLqVURESPONSE_FORMATqWUcreate_hmacqXUPhotosProxyqYUfacebookqZU
+secret_keyq[eUnew_scratch]q\Upowq]aUtest]q^Upipeq_aUnew_scratch.scratch2]q`UpowqaaUchat_eg]qb(Umy_jidqcUxmpp_clientqdU$XFacebookPlatformClientAuthenticatorqeUmessageqfUmy_uidqgUget_facebook_clientqhUglobal_fb_clientqiUto_uidqjUFacebookChatClientqkeU	test_rope]qlUpowqmaU	jytwitter]qnU	JyTwitterqoau.

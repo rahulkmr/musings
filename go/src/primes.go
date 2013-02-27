@@ -2,16 +2,16 @@ package main
 
 import "fmt"
 
-func seed(ch chan int) {
+func seed(ch chan<- int) {
     for i := 2; ; i++ {
         ch <- i
     }
 }
 
-func filter(in, out chan int, prime int) {
+func filter(in <-chan int, out chan<- int, prime int) {
     for {
         i := <-in
-        if i%prime != 0 { out <- i }
+        if i % prime != 0 { out <- i }
     }
 }
 

@@ -1,16 +1,16 @@
 package main
 
 import (
-    "fmt"
+	"fmt"
 )
 
 func main() {
-    test := func (who string) string {
-        return "Hello, " + who
-    }
-    fmt.Println(test("World!"))
+	test := func (who string) string {
+		return "Hello, " + who
+	}
+	fmt.Println(test("World!"))
 
-    func (who string) {
-        fmt.Println("Hello,", who)
-    }("World!")
+	func (who string) {
+		fmt.Println("Hello,", who)
+	}("World!")
 }

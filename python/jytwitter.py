@@ -1,12 +1,10 @@
 import twitter
-import re
-
+from java.awt import Component, GridLayout
+from java.net import URL
 from javax.swing import (BoxLayout, ImageIcon, JButton, JFrame, JPanel,
         JPasswordField, JLabel, JTextArea, JTextField, JScrollPane,
         SwingConstants, WindowConstants)
-from java.awt import Component, GridLayout
-from java.net import URL
-from java.lang import Runnable
+
 
 class JyTwitter(object):
     def __init__(self):

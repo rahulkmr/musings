@@ -16,10 +16,15 @@ def pick(choices)
   choices.shift
 end
 
+def assert(condition)
+  backtrack unless condition
+end
+
 a = pick [9, 4, 12, 33]
 b = pick [1, 22, 3, 47]
 c = pick [5, 2, 93, 5]
 
-backtrack unless (a > b) and
-  (a*a + b*b == c*c)
+assert (a*a + b*b == c*c)
+assert (a > b)
+
 puts "#{a} #{b} #{c}"

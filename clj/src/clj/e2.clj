@@ -11,3 +11,4 @@
   (apply + (for [num fib-seq :when (even? num)
                  :while (< num limit)] num)))
 
+(println sum)

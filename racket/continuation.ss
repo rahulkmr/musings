@@ -35,5 +35,5 @@
   (assert (< b a))
 
   ; Print out the answer:
-  (display (list a b c))
+  (print (list a b c))
   (newline))

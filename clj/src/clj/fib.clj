@@ -1,9 +1,8 @@
 (ns clj.fib)
 
-(defn fib-step 
-  [[a b]]
-  [b (+ a b)])
-
 (defn fib-seq
   []
-  (map first (iterate fib-step [0 1])))
+  (map first (iterate 
+               (fn [[a b]] [b (+ a b)])
+               [0M 1M])))
+

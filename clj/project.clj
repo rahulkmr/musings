@@ -8,4 +8,6 @@
                            [clj-time "0.3.0"]
                            [enlive "1.0.0-SNAPSHOT"]
                            [ring "1.0.0"]
+                           [org.clojure/tools.nrepl "0.2.1"]
+                           [seesaw "1.4.2"] 
                            [aleph "0.2.0"]])

@@ -1,5 +1,7 @@
 (ns clj.echo_server
-  (require [lamina.core :as lm] [aleph.tcp :as al]))
+  (require
+    [lamina.core :as lm]
+    [aleph.tcp :as al]))
 
 (defn echo-handler [channel client-info]
   (lm/siphon channel channel))
